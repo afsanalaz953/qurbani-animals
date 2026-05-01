@@ -3,6 +3,7 @@ import React from 'react';
 import Link from "next/link";
 import {useForm} from "react-hook-form";
 import {authClient} from "@/lib/auth-client"
+import { DiPhotoshop } from 'react-icons/di';
 
 const RegisterPage = () => {
 const { register, handleSubmit,formState: { errors }} = useForm();
@@ -15,7 +16,7 @@ const { register, handleSubmit,formState: { errors }} = useForm();
     const {data:res, error} = await authClient.signUp.email({
     name: name, // required
     email: email, // required
-    image: "https://example.com/image.png",
+    image: image,
     password: password, // required
     callbackURL: "/login",
   
@@ -41,18 +42,26 @@ if (error) {
         <form onSubmit={handleSubmit(handleRegisterFunc)}>
                     <fieldset className="fieldset">
   <legend className="fieldset-legend">Name</legend>
-  <input type="text" className="input" placeholder="Enter Your Name" {...register("name")} />
-
+  <input type="text" className="input" placeholder="Enter Your Name" {...register("name", {
+    required: "Name is required",
+  })} />
+{errors.name && <p> name is required </p>} 
 </fieldset>
 
  <fieldset className="fieldset">
   <legend className="fieldset-legend">Email</legend>
-  <input type="text" className="input" placeholder="Enter Your Email" {...register("email")} />
+  <input type="text" className="input" placeholder="Enter Your Email" {...register("email",{
+    required: "Email is required",
+  })} />
+{errors.email && <p> email is required </p>}
 </fieldset>
 
  <fieldset className="fieldset">
   <legend className="fieldset-legend">Photo URL</legend>
-  <input type="text" className="input" placeholder="Photo url" {...register("image")} />
+  <input type="text" className="input" placeholder="Photo url" {...register("image",{
+    required: "Photo url is required",
+  })} />
+{errors.photo && <p> Photo is required </p>}
 </fieldset>
 
 <fieldset className="fieldset">
@@ -61,7 +70,7 @@ if (error) {
    {errors.password && <p> password is required </p>}
 </fieldset>
 <br />
-<button className='btn btn-primary w-full'><Link href = '/login'></Link> Register</button>
+<button className='btn btn-primary w-full'><Link href ='/login'>Register</Link> </button>
 <p className='text-sm'> Already have an account</p>
 <span className='text-sm font-bold text-blue-700'><Link href= "/login"> sign in </Link></span>
                 </form>
