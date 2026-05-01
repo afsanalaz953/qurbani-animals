@@ -9,7 +9,7 @@
 "age": 3,
 "location": "Bogura",
 "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
-"image": "/public/assests/Deshi Shahi Cow.png",
+"image": "/assests/Deshi Shahi Cow.png",
 "category": "Large Animal"
 },
 {
@@ -22,7 +22,7 @@
 "age": 4,
 "location": "Sirajganj",
 "description": "High milk yielding cow with excellent body structure. Vaccinated and dewormed.",
-"image": "/public/assests/Friesian Cross Cow.png",
+"image": "/assests/Friesian Cross Cow.png",
 "category": "Large Animal"
 },
 {
@@ -35,7 +35,7 @@
 "age": 1.5,
 "location": "Rajshahi",
 "description": "Pure breed Black Bengal goat known for superior meat quality and disease resistance.",
-"image": "/public/assests/Black Bengal Goat.png",
+"image": "/assests/Black Bengal Goat.png",
 "category": "Small Animal"
 },
 {
@@ -48,7 +48,7 @@
 "age": 2.5,
 "location": "Pabna",
 "description": "Dual-purpose cow good for both milk and meat. Calm temperament.",
-"image": "/public/assests/deshi cow.png",
+"image": "/assests/deshi cow.png",
 "category": "Large Animal"
 },
 {
@@ -61,7 +61,7 @@
 "age": 5,
 "location": "Mymensingh",
 "description": "High fat milk buffalo. Very fertile and adapted to local climate.",
-"image": "/public/assests/Mehsana Buffalo.jpg",
+"image": "/assests/Mehsana Buffalo.jpg",
 "category": "Large Animal"
 },
 {
@@ -74,7 +74,7 @@
 "age": 2,
 "location": "Dhaka",
 "description": "Tall breed with long ears and excellent growth rate. Show quality goat.",
-"image": "/public/assests/ram sagol.png",
+"image": "/assests/ram sagol.png",
 "category": "Small Animal"
 },
 {
@@ -87,7 +87,7 @@
 "age": 1.2,
 "location": "Chattogram",
 "description": "Fast growing sheep breed suitable for commercial farming. Soft wool and tender meat.",
-"image": "/public/assests/merino sheep.png",
+"image": "/assests/merino sheep.png",
 "category": "Small Animal"
 },
 {
@@ -100,7 +100,7 @@
 "age": 2.5,
 "location": "Barishal",
 "description": "Pure Nili-Ravi breed known for highest milk fat percentage. Champion bloodline.",
-"image": "/public/assests/kamori.png",
+"image": "/assests/kamori.png",
 "category": "Small Animal"
 }
 ]
