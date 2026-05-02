@@ -8,7 +8,7 @@
 "weight": 280,
 "age": 3,
 "location": "Bogura",
-"description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
+"description": "Healthy deshi cow suitable for Qurbani. Well fed with natural food.",
 "image": "/assests/Deshi Shahi Cow.png",
 "category": "Large Animal"
 },
@@ -47,7 +47,7 @@
 "weight": 310,
 "age": 2.5,
 "location": "Pabna",
-"description": "Dual-purpose cow good for both milk and meat. Calm temperament.",
+"description": "Dual-purpose cow good for both milk and meat.Calm temperament.",
 "image": "/assests/deshi cow.png",
 "category": "Large Animal"
 },

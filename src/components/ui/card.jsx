@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const Cards = ({animals}) => {
     return (
-        <div className='grid grid-cols-4 gap-2 bg-slate-100 '>
+        <div className='grid md:grid-cols-2    lg:grid-cols-4 gap-2 bg-slate-100 '>
 <div className="card bg-white shadow-sm w-max">
   <figure className="px-10 pt-10 ">
     <Image
