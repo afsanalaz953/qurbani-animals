@@ -4,10 +4,11 @@ import Link from "next/link";
 import {useForm} from "react-hook-form";
 import {authClient} from "@/lib/auth-client"
 import { DiPhotoshop } from 'react-icons/di';
+import { useRouter } from 'next/navigation';
 
 const RegisterPage = () => {
 const { register, handleSubmit,formState: { errors }} = useForm();
-   
+   const router = useRouter();
     const handleRegisterFunc = async(data) => {
     console.log(data, "data");
     const {name, email, password, image} = data;
@@ -28,6 +29,7 @@ if (error) {
 }
  if (res) {
     alert("Signup Successful")
+    router.push("/login");
  }   
     };
 
@@ -71,7 +73,7 @@ if (error) {
    {errors.password && <p> {errors.password.message} </p>}
 </fieldset>
 <br />
-<button className='btn btn-primary w-full'><Link href ='/login'>Register</Link> </button>
+<button type="submit"  className='btn btn-primary w-full'> Register </button>
 <p className='text-sm'> Already have an account</p>
 <span className='text-sm font-bold text-blue-700'><Link href= "/login"> sign in </Link></span>
                 </form>

@@ -17,7 +17,7 @@ cache:"no-store"
 const allAnimals = await res.json();
 console.log(allAnimals, "singleAnimals");
 
-const singleAnimal = allAnimals.find (animal => animal.id == id)
+const singleAnimal = allAnimals.find (animal => animal.id === parseInt(id))
 
 console.log(singleAnimal);
 
@@ -29,6 +29,7 @@ console.log(singleAnimal);
   <figure >
     <Image
       src={singleAnimal.image}
+      referrerPolicy='no-referrer'
       alt="animals" 
       width = {500}
       height = {500}

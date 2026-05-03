@@ -17,7 +17,7 @@ const AllAnimalsPage = async() => {
         <div className='container mx-auto bg-slate-100'>
             <div className='flex justify-between mt-8 mx-4'>
                 <h2 className='font-bold text-4xl text-center '>All Animals </h2>
-                <p className=''> Sort by price:
+                <div className=''> Sort by price:
                   <div className="dropdown dropdown-start">
   <div tabIndex={0} role="button" className="btn m-1 w-65">Low to High ⬇️</div>
   <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-50 p-2 shadow-sm">
@@ -26,7 +26,7 @@ const AllAnimalsPage = async() => {
   </ul>
 </div>
 
-                </p>
+                </div>
             </div>
           
 
@@ -55,7 +55,7 @@ const AllAnimalsPage = async() => {
                                 <p className='text-2xl font-bold text-green-500'>Price: {animals.price}</p>
                                 <div className="card-actions">
                                     <button className="btn btn-neutral font-bold w-full">
-                                        <Link href="/animals">View Details</Link>
+                                        <Link href={`/animals/${animals.id}`}>View Details</Link>
                                     </button>
                                 </div>
                             </div>

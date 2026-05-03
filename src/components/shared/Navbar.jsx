@@ -42,8 +42,8 @@ console.log (user, "session");
     user ? ( <div className='flex gap-2 items-center'>
            
     <div className='rounded-full flex gap-2'> 
-        <Image src={user.image || charAt(0)}
-        referrerPolicy='no-referrer'
+        <Image src={user.image || userAvatar  }
+        // referrerPolicy='no-referrer'
       alt=" author"
       width={50}
       height={50} 

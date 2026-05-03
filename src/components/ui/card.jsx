@@ -23,7 +23,7 @@ const Cards = ({animals}) => {
     <p className='text-2xl font-bold text-green-500'>Price: {animals.price}</p>
    
     <div className="card-actions">
-      <button className="btn btn-neutral font-bold w-full"> <Link href = "/animals">View Details</Link></button>
+      <button className="btn btn-neutral font-bold w-full"> <Link href ={`/animals/${animals.id}`} >View Details</Link></button>
     </div>
   </div>
 </div>
