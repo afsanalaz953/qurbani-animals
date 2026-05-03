@@ -4,6 +4,7 @@ dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+ import { ToastContainer, toast } from 'react-toastify';
 import Navbar from "@/components/shared/Navbar"
 import Banner from "@/components/shared/Banner"
 
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
        
         {children}
-        
+        <ToastContainer position="top-right" /> 
         </body>
     </html>
   );

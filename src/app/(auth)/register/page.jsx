@@ -39,13 +39,14 @@ if (error) {
             
             <div className='bg-white rounded-xl w-150 container mx-auto p-10 my-6 flex gap-4 flex-col justify-center items-center'>
                 <h2 className='font-bold'> Register Your Account </h2>
-        <form onSubmit={handleSubmit(handleRegisterFunc)}>
+
+<form onSubmit={handleSubmit(handleRegisterFunc)}>
                     <fieldset className="fieldset">
   <legend className="fieldset-legend">Name</legend>
   <input type="text" className="input" placeholder="Enter Your Name" {...register("name", {
-    required: "Name is required",
+    required: "name is required",
   })} />
-{errors.name && <p> name is required </p>} 
+{errors.name && <p> {errors.name.message} </p>} 
 </fieldset>
 
  <fieldset className="fieldset">
@@ -53,7 +54,7 @@ if (error) {
   <input type="text" className="input" placeholder="Enter Your Email" {...register("email",{
     required: "Email is required",
   })} />
-{errors.email && <p> email is required </p>}
+{errors.email && <p> {errors.email.message} </p>}
 </fieldset>
 
  <fieldset className="fieldset">
@@ -61,13 +62,13 @@ if (error) {
   <input type="text" className="input" placeholder="Photo url" {...register("image",{
     required: "Photo url is required",
   })} />
-{errors.photo && <p> Photo is required </p>}
+{errors.image && <p> {errors.image.message} </p>}
 </fieldset>
 
 <fieldset className="fieldset">
   <legend className="fieldset-legend"> Password </legend>
   <input type="password" className="input" placeholder="Enter your Password" {...register("password", { required: "password is require" })} />
-   {errors.password && <p> password is required </p>}
+   {errors.password && <p> {errors.password.message} </p>}
 </fieldset>
 <br />
 <button className='btn btn-primary w-full'><Link href ='/login'>Register</Link> </button>
