@@ -17,7 +17,7 @@ const topAnimals = await res.json()
     return (
         <div className='container mx-auto bg-slate-100 p-10'>
             <div className =' text-3xl font-bold text-center m-10'>Top Featured Animals</div>
-              <div className='grid grid-cols-4'>
+              <div className='grid  md:grid-cols-2  lg:grid-cols-4'>
                 {topFeaturedAnimals.map ((featureAnimals, ind) => {
                 return <Card animals = {featureAnimals} key = {ind}/>
               })}

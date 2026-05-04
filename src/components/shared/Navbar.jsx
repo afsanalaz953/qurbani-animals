@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from "@/assets/logo.png"
 import Image from "next/image"
-import userAvatar from "@/assets/useravater.png"
+
 import Link from "next/link"
 import { usePathname } from 'next/navigation';
 import { authClient } from "@/lib/auth-client"
@@ -35,6 +35,7 @@ console.log (user, "session");
                 <ul className='flex gap-3'>
                     <li><Link href={"/"} className={`${isActive ("/") ? " border-b-4 border-b-green-600": "" }`}  >Home</Link></li>
                     <li><Link href={"/allanimals"} className={`${isActive ("/allanimals") ? " border-b-4 border-b-green-600" : ""}`} >All Animals</Link></li>
+                    <li><Link href={"/profile"} className={`${isActive ("/profile") ? " border-b-4 border-b-green-600" : ""}`} >My Profile</Link></li>
                     
                 </ul>
  <div className='flex gap-2  items-center'>

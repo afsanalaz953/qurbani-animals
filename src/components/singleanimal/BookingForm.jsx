@@ -35,9 +35,9 @@ const BookingForm = () => {
 <div className='shadow-md border-[1] rounded-2xl container mx-auto'>
 
 <form className='mx-50 flex flex-col w-900 my-10 ' onSubmit={handleSubmit(onSubmit)}>
-  <fieldset className="fieldset w-200">
+  <fieldset className="fieldset  sm:w-50 md:w-100 lg:w-200">
       <legend className="fieldset-legend font-bold">Name</legend>
-      <input type="text" className="input w-200 bg-slate-200" placeholder="Enter Your Name" {...register("name", {
+      <input type="text" className="input  sm:w-50 md:w-100 lg:w-200 bg-slate-200" placeholder="Enter Your Name" {...register("name", {
         required: "name is required",
       })} />
     {errors.name && <p> {errors.name.message} </p>} 
@@ -45,27 +45,27 @@ const BookingForm = () => {
     
      <fieldset className="fieldset ">
       <legend className="fieldset-legend font-bold">Email</legend>
-      <input type="text" className="input w-200  bg-slate-200" placeholder="Enter Your Email" {...register("email",{
+      <input type="text" className="input  sm:w-50 md:w-100 lg:w-200  bg-slate-200" placeholder="Enter Your Email" {...register("email",{
         required: "Email is required",
       })} />
     {errors.email && <p> {errors.email.message} </p>}
     </fieldset>
     
-     <fieldset className="fieldset w-200">
+     <fieldset className="fieldset  sm:w-50 md:w-100 lg:w-200">
       <legend className="fieldset-legend font-bold">Phone Number</legend>
-      <input type="text" className="input w-200  bg-slate-200" placeholder="Phone" {...register("phone",{
+      <input type="text" className="input  sm:w-50 md:w-100 lg:w-200  bg-slate-200" placeholder="Phone" {...register("phone",{
         required: "Phone number is required",
       })} />
     {errors.phone && <p> {errors.phone.message} </p>}
     </fieldset>
     
-    <fieldset className="fieldset w-200">
+    <fieldset className="fieldset sm:w-50  md:w-100 lg:w-200">
       <legend className="fieldset-legend font-bold"> Password </legend>
-      <input type="password" className="input w-200  bg-slate-200 " placeholder="Enter your Password" {...register("password", { required: "password is require" })} />
+      <input type="password" className="input sm:w-50 md:w-100 lg:w-200  bg-slate-200 " placeholder="Enter your Password" {...register("password", { required: "password is require" })} />
        {errors.password && <p> {errors.password.message} </p>}
     </fieldset>
     <br />
-    <button className='btn btn-default w-200 text-white bg-black'>Book Now</button>
+    <button className='btn btn-default md:w-100 lg:w-200 text-white bg-black'>Book Now</button>
     
    </form>
     </div>
